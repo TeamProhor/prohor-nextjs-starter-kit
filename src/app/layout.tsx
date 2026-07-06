@@ -46,6 +46,10 @@ export default function RootLayout({
       className={`${hindSiliguri.variable} ${cormorant.variable} ${jetbrainsMono.variable}  ${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="alternate" type="text/plain" href="/llms.txt" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
+      </head>
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <TooltipProvider>
