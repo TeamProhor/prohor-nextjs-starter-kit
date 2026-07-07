@@ -1,35 +1,8 @@
 import type { Metadata } from "next";
-import {
-  Cormorant,
-  Hind_Siliguri,
-  Inter,
-  JetBrains_Mono,
-} from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { cormorant, hindSiliguri, inter, jetbrainsMono } from "@/lib/fonts";
 import "@/app/globals.css";
-
-const hindSiliguri = Hind_Siliguri({
-  variable: "--font-hind-siliguri",
-  subsets: ["bengali"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const cormorant = Cormorant({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
 
 import { getDictionary, locales } from "@/lib/i18n";
 import { siteJsonLd, siteMetadata } from "@/lib/seo";

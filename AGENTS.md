@@ -16,4 +16,5 @@ Read `node_modules/next/dist/docs/` for Next.js breaking changes. Heed deprecati
 11. **Performance**: Follow `.agents/skills/vercel-react-best-practices/SKILL.md`. Prevent waterfalls, optimize re-renders.
 12. **Animations**: CRITICAL. Use GSAP. Follow `.agents/skills/gsap-{core,react,scrolltrigger,timeline,performance}/SKILL.md`.
 13. **Output Enforcement**: Apply `.agents/skills/full-output-enforcement/SKILL.md` to prevent arbitrary truncation.
+14. **Translations / i18n**: CRITICAL. Use JSON files (`src/dictionaries/[lang].json`) for all localization. Use the asynchronous `getDictionary(locale)` helper from `src/lib/i18n.ts` in Server Components. Never hardcode translation strings directly in components or `i18n.ts`.
 <!-- END:nextjs-agent-rules -->
